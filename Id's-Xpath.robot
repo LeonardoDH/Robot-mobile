@@ -1,0 +1,29 @@
+*** Settings ***
+Library     AppiumLibrary
+Resource    Recursos.robot
+*** Variables ***
+${Economize}           id=com.pharmacysa.farmaciasapp.debug:id/comparativeViewContainerFragment
+${Criar lista}         id=com.pharmacysa.farmaciasapp.debug:id/buttonCreateList
+${Add item}            id=com.pharmacysa.farmaciasapp.debug:id/fabAddProducts
+${Busca}               id=com.pharmacysa.farmaciasapp.debug:id/customEditText
+${Add Item1}           id=com.pharmacysa.farmaciasapp.debug:id/customEditText    ${Item1}
+${Selecionar busca}    xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView[1]
+${Selecionar item}     xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView
+${Confirmar item}      id=com.pharmacysa.farmaciasapp.debug:id/buttonCheckOffers  
+${box item1}    xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.RelativeLayout
+${box item2}    xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.RelativeLayout
+${comparar}            id=com.pharmacysa.farmaciasapp.debug:id/buttonCheckOffers
+${Aba Itens}           id=com.pharmacysa.farmaciasapp.debug:id/itemOption
+${Aba lojas}           id=com.pharmacysa.farmaciasapp.debug:id/shopOption
+${add prdt1}           xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView[2]/android.view.ViewGroup[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageView[2]
+${add prdt2}           id=com.pharmacysa.farmaciasapp.debug:id/imgAddItemCart
+${add cesta}           id=com.pharmacysa.farmaciasapp.debug:id/buttonGoToShipping
+${Ir p/ pagamento}     id=com.pharmacysa.farmaciasapp.debug:id/buttonGoToShipping
+${Barra de busca}      id=com.pharmacysa.farmaciasapp.debug:id/editTerms
+${Item busca home}     xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.ImageView
+${Add prdt carrinho}   id=com.pharmacysa.farmaciasapp.debug:id/imgAddItemCart
+${cesta}               xpath=//android.widget.FrameLayout[@content-desc="Cesta"]/android.view.ViewGroup/android.widget.TextView
+${loja}                xpath=//android.widget.FrameLayout[@content-desc="Lojas"]/android.view.ViewGroup/android.widget.TextView
+${Loja pg loja}        xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.ScrollView/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView[2]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup
+${card produto}        xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.ScrollView/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[2]/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView[1]
+${add prdt a cesta (card)}    id=com.pharmacysa.farmaciasapp.debug:id/buttonBuyNow

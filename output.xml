@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230620 14:42:25.382" rpa="false" schemaversion="3">
+<suite id="s1" name="Busca" source="c:\Users\Time L\Documents\Automação\Busca.robot">
+<test id="s1-t1" name="Busca De itens e lojas" line="6">
+<kw name="Abrir App" library="Recursos">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName:UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=redmi note 8</arg>
+<arg>app=${EXECDIR}/APP/app.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230620 14:42:26.778" endtime="20230620 14:42:51.124"/>
+</kw>
+<status status="PASS" starttime="20230620 14:42:26.777" endtime="20230620 14:42:51.125"/>
+</kw>
+<kw name="Dado que o usuário esteja na tela de login" library="Recursos">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/btNext</arg>
+<arg>15</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230620 14:42:52.949" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/btNext
+criteria is com.pharmacysa.farmaciasapp.debug:id/btNext
+criteria is com.pharmacysa.farmaciasapp.debug:id/btNext
+criteria is com.pharmacysa.farmaciasapp.debug:id/btNext</msg>
+<status status="PASS" starttime="20230620 14:42:51.127" endtime="20230620 14:42:52.952"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/btNext</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 14:42:52.958" level="INFO">Clicking element 'id=com.pharmacysa.farmaciasapp.debug:id/btNext'.</msg>
+<msg timestamp="20230620 14:42:53.293" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/btNext</msg>
+<status status="PASS" starttime="20230620 14:42:52.953" endtime="20230620 14:42:53.293"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/btNext</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 14:42:53.299" level="INFO">Clicking element 'id=com.pharmacysa.farmaciasapp.debug:id/btNext'.</msg>
+<msg timestamp="20230620 14:42:54.090" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/btNext</msg>
+<status status="PASS" starttime="20230620 14:42:53.294" endtime="20230620 14:42:54.090"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/btInit</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 14:42:54.094" level="INFO">Clicking element 'id=com.pharmacysa.farmaciasapp.debug:id/btInit'.</msg>
+<msg timestamp="20230620 14:42:54.873" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/btInit</msg>
+<status status="PASS" starttime="20230620 14:42:54.090" endtime="20230620 14:42:54.873"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/customEditText</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230620 14:42:55.809" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/customEditText</msg>
+<status status="PASS" starttime="20230620 14:42:54.874" endtime="20230620 14:42:55.809"/>
+</kw>
+<status status="PASS" starttime="20230620 14:42:51.126" endtime="20230620 14:42:55.810"/>
+</kw>
+<kw name="E adicione um email válido" library="Recursos">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/customEditText</arg>
+<arg>${email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 14:42:55.819" level="INFO">Typing text 'test-user-e2e@farmaciasapp.com.br' into text field 'id=com.pharmacysa.farmaciasapp.debug:id/customEditText'</msg>
+<msg timestamp="20230620 14:42:56.555" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/customEditText</msg>
+<status status="PASS" starttime="20230620 14:42:55.813" endtime="20230620 14:42:56.556"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/customEditText</arg>
+<arg>15</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230620 14:42:57.161" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/customEditText</msg>
+<status status="PASS" starttime="20230620 14:42:56.556" endtime="20230620 14:42:57.161"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/buttonRequestOTP</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 14:42:57.167" level="INFO">Clicking element 'id=com.pharmacysa.farmaciasapp.debug:id/buttonRequestOTP'.</msg>
+<msg timestamp="20230620 14:42:57.963" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/buttonRequestOTP</msg>
+<status status="PASS" starttime="20230620 14:42:57.162" endtime="20230620 14:42:57.963"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230620 14:43:00.661" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview
+criteria is com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview
+criteria is com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview
+criteria is com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview
+criteria is com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview</msg>
+<status status="PASS" starttime="20230620 14:42:57.963" endtime="20230620 14:43:00.662"/>
+</kw>
+<status status="PASS" starttime="20230620 14:42:55.812" endtime="20230620 14:43:00.662"/>
+</kw>
+<kw name="E receba o otp válido" library="Recursos">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/customEditText</arg>
+<arg>${OTP}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230620 14:43:00.670" level="INFO">Typing text '202322' into text field 'id=com.pharmacysa.farmaciasapp.debug:id/customEditText'</msg>
+<msg timestamp="20230620 14:43:01.317" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/customEditText</msg>
+<status status="PASS" starttime="20230620 14:43:00.664" endtime="20230620 14:43:01.317"/>
+</kw>
+<status status="PASS" starttime="20230620 14:43:00.663" endtime="20230620 14:43:01.319"/>
+</kw>
+<kw name="Quando o usuário clicar em entrar" library="Recursos">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/buttonConfirmOTP</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 14:43:01.328" level="INFO">Clicking element 'id=com.pharmacysa.farmaciasapp.debug:id/buttonConfirmOTP'.</msg>
+<msg timestamp="20230620 14:43:02.744" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/buttonConfirmOTP</msg>
+<status status="PASS" starttime="20230620 14:43:01.323" endtime="20230620 14:43:02.745"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230620 14:43:10.425" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView</msg>
+<status status="PASS" starttime="20230620 14:43:02.746" endtime="20230620 14:43:10.426"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 14:43:10.433" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[2]'.</msg>
+<msg timestamp="20230620 14:43:11.504" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[2]</msg>
+<status status="PASS" starttime="20230620 14:43:10.427" endtime="20230620 14:43:11.505"/>
+</kw>
+<status status="PASS" starttime="20230620 14:43:01.322" endtime="20230620 14:43:11.505"/>
+</kw>
+<kw name="Então o usuário é redirecionado para a página inicial da conta" library="Recursos">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.android.permissioncontroller:id/permission_allow_foreground_only_button</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230620 14:43:12.583" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_foreground_only_button</msg>
+<status status="PASS" starttime="20230620 14:43:11.511" endtime="20230620 14:43:12.584"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.permissioncontroller:id/permission_allow_foreground_only_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230620 14:43:12.589" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/permission_allow_foreground_only_button'.</msg>
+<msg timestamp="20230620 14:43:12.697" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_foreground_only_button</msg>
+<status status="PASS" starttime="20230620 14:43:12.584" endtime="20230620 14:43:12.697"/>
+</kw>
+<status status="PASS" starttime="20230620 14:43:11.509" endtime="20230620 14:43:12.698"/>
+</kw>
+<kw name="Dado que o usuário está na tela inicial" library="Recursos">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${Barra de busca}</arg>
+<arg>15</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230620 14:43:29.320" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2216"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="com.miui.home" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true"&gt;
+        &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true"&gt;
+          &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/shortcut_menu_layer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true"&gt;
+            &lt;android.view.View index="0" package="com.miui.home" class="android.view.View" text="" resource-id="com.miui.home:id/drag_layer_background" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true" /&gt;
+            &lt;android.widget.FrameLayout index="1" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/drag_layer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true"&gt;
+              &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/drag_view_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true" /&gt;
+              &lt;android.widget.FrameLayout index="1" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/screen" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true"&gt;
+                &lt;android.view.View index="1" package="com.miui.home" class="android.view.View" text="" resource-id="com.miui.home:id/scrim_view" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true" /&gt;
+                &lt;android.widget.FrameLayout index="2" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/screen_content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true"&gt;
+                  &lt;com.miui.home.launcher.ScreenView index="0" package="com.miui.home" class="com.miui.home.launcher.ScreenView" text="" resource-id="com.miui.home:id/workspace" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="true" selected="false" bounds="[0,0][1080,2216]" displayed="true"&gt;
+                    &lt;android.widget.FrameLayout index="1" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,2000][1080,2055]" displayed="true"&gt;
+                      &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" content-desc="Abrir a Gaveta de apps" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[522,2019][558,2055]" displayed="true" /&gt;
+                    &lt;/android.widget.FrameLayout&gt;
+                    &lt;android.widget.FrameLayout index="2" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,80][1080,2216]" displayed="true"&gt;
+                      &lt;android.view.ViewGroup index="0" package="com.miui.home" class="android.view.ViewGroup" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,80][1080,2216]" displayed="true"&gt;
+                        &lt;android.widget.RelativeLayout index="0" package="com.miui.home" class="android.widget.RelativeLayout" text="" content-desc="GNDI Easy" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[33,164][287,461]" displayed="true"&gt;
+                          &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[82,164][238,314]" displayed="true"&gt;
+                            &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[82,164][238,314]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" content-desc="GNDI Easy" resource-id="com.miui.home:id/icon_icon" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[93,180][227,314]" displayed="true" /&gt;
+                            &lt;/android.widget.FrameLayout&gt;
+                          &lt;/android.widget.FrameLayout&gt;
+                          &lt;android.widget.FrameLayout index="1" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_title_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[33,314][287,461]" displayed="true"&gt;
+                            &lt;android.widget.TextView index="0" package="com.miui.home" class="android.widget.TextView" text="GNDI Easy" resource-id="com.miui.home:id/icon_title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[33,319][287,461]" displayed="true" /&gt;
+                          &lt;/android.widget.FrameLayout&gt;
+                        &lt;/android.widget.RelativeLayout&gt;
+                        &lt;android.widget.RelativeLayout index="1" package="com.miui.home" class="android.widget.RelativeLayout" text="" content-desc="Farmácias APP" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[287,164][541,461]" displayed="true"&gt;
+                          &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[336,164][492,314]" displayed="true"&gt;
+                            &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[336,164][492,314]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" content-desc="Farmácias APP" resource-id="com.miui.home:id/icon_icon" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[347,180][481,314]" displayed="true" /&gt;
+                            &lt;/android.widget.FrameLayout&gt;
+                          &lt;/android.widget.FrameLayout&gt;
+                          &lt;android.widget.FrameLayout index="1" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_title_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[287,314][541,461]" displayed="true"&gt;
+                            &lt;android.widget.TextView index="0" package="com.miui.home" class="android.widget.TextView" text="Farmácias APP" resource-id="com.miui.home:id/icon_title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[287,319][541,461]" displayed="true" /&gt;
+                          &lt;/android.widget.FrameLayout&gt;
+                        &lt;/android.widget.RelativeLayout&gt;
+                        &lt;android.widget.RelativeLayout index="2" package="com.miui.home" class="android.widget.RelativeLayout" text="" content-desc="Farmácias APP" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[541,164][795,461]" displayed="true"&gt;
+                          &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[590,164][746,314]" displayed="true"&gt;
+                            &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[590,164][746,314]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" content-desc="Farmácias APP" resource-id="com.miui.home:id/icon_icon" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[601,180][735,314]" displayed="true" /&gt;
+                            &lt;/android.widget.FrameLayout&gt;
+                          &lt;/android.widget.FrameLayout&gt;
+                          &lt;android.widget.FrameLayout index="1" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_title_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[541,314][795,461]" displayed="true"&gt;
+                            &lt;android.widget.TextView index="0" package="com.miui.home" class="android.widget.TextView" text="Farmácias APP" resource-id="com.miui.home:id/icon_title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[541,319][795,461]" displayed="true" /&gt;
+                          &lt;/android.widget.FrameLayout&gt;
+                        &lt;/android.widget.RelativeLayout&gt;
+                      &lt;/android.view.ViewGroup&gt;
+                    &lt;/android.widget.FrameLayout&gt;
+                  &lt;/com.miui.home.launcher.ScreenView&gt;
+                  &lt;com.miui.home.launcher.ScreenView index="1" package="com.miui.home" class="com.miui.home.launcher.ScreenView" text="" resource-id="com.miui.home:id/hotseat" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="true" selected="false" bounds="[0,2094][1080,2216]" displayed="true"&gt;
+                    &lt;android.widget.RelativeLayout index="0" package="com.miui.home" class="android.widget.RelativeLayout" text="" content-desc="544 não lidas de Mais apps" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[0,2094][245,2216]" displayed="true"&gt;
+                      &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[40,2094][196,2216]" displayed="true"&gt;
+                        &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[40,2094][196,2216]" displayed="true"&gt;
+                          &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" content-desc="Mais apps" resource-id="com.miui.home:id/icon_icon" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[51,2110][185,2216]" displayed="true" /&gt;
+                          &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/cover" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[51,2110][185,2216]" displayed="true" /&gt;
+                          &lt;android.widget.LinearLayout index="2" package="com.miui.home" class="android.widget.LinearLayout" text="" resource-id="com.miui.home:id/preview_icons_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[68,2127][167,2216]" displayed="true"&gt;
+                            &lt;android.widget.LinearLayout index="0" package="com.miui.home" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[68,2127][167,2160]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item1" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[68,2127][101,2160]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item2" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[101,2127][134,2160]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="2" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item3" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[134,2127][167,2160]" displayed="true" /&gt;
+                            &lt;/android.widget.LinearLayout&gt;
+                            &lt;android.widget.LinearLayout index="1" package="com.miui.home" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[68,2160][167,2193]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item4" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[68,2160][101,2193]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item5" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[101,2160][134,2193]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="2" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item6" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[134,2160][167,2193]" displayed="true" /&gt;
+                            &lt;/android.widget.LinearLayout&gt;
+                            &lt;android.widget.LinearLayout index="2" package="com.miui.home" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[68,2193][167,2216]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item7" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[68,2193][101,2216]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item8" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[101,2193][134,2216]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="2" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item9" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[134,2193][167,2216]" displayed="true" /&gt;
+                            &lt;/android.widget.LinearLayout&gt;
+                          &lt;/android.widget.LinearLayout&gt;
+                        &lt;/android.widget.FrameLayout&gt;
+                        &lt;android.widget.TextView index="1" package="com.miui.home" class="android.widget.TextView" text="544" resource-id="com.miui.home:id/icon_msg" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[132,2094][196,2146]" displayed="true" /&gt;
+                      &lt;/android.widget.FrameLayout&gt;
+                      &lt;android.widget.FrameLayout index="1" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_title_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,2244][245,2340]" displayed="true"&gt;
+                        &lt;android.widget.TextView index="0" package="com.miui.home" class="android.widget.TextView" text="Mais apps" resource-id="com.miui.home:id/icon_title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,2249][245,2340]" displayed="true" /&gt;
+                      &lt;/android.widget.FrameLayout&gt;
+                    &lt;/android.widget.RelativeLayout&gt;
+                    &lt;android.widget.RelativeLayout index="1" package="com.miui.home" class="android.widget.RelativeLayout" text="" content-desc="1 não lida de Telefone" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[202,2094][456,2216]" displayed="true"&gt;
+                      &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[251,2094][407,2216]" displayed="true"&gt;
+                        &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[251,2094][407,2216]" displayed="true"&gt;
+                          &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" content-desc="Telefone" resource-id="com.miui.home:id/icon_icon" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[262,2110][396,2216]" displayed="true" /&gt;
+                        &lt;/android.widget.FrameLayout&gt;
+                        &lt;android.widget.TextView index="1" package="com.miui.home" class="android.widget.TextView" text="1" resource-id="com.miui.home:id/icon_msg" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[355,2094][407,2146]" displayed="true" /&gt;
+                      &lt;/android.widget.FrameLayout&gt;
+                      &lt;android.widget.FrameLayout index="1" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_title_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[202,2244][456,2340]" displayed="true"&gt;
+                        &lt;android.widget.TextView index="0" package="com.miui.home" class="android.widget.TextView" text="Telefone" resource-id="com.miui.home:id/icon_title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[202,2249][456,2340]" displayed="true" /&gt;
+                      &lt;/android.widget.FrameLayout&gt;
+                    &lt;/android.widget.RelativeLayout&gt;
+                    &lt;android.widget.RelativeLayout index="2" package="com.miui.home" class="android.widget.RelativeLayout" text="" content-desc="Pure Tuber" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[413,2094][667,2216]" displayed="true"&gt;
+                      &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[462,2094][618,2216]" displayed="true"&gt;
+                        &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[462,2094][618,2216]" displayed="true"&gt;
+                          &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" content-desc="Pure Tuber" resource-id="com.miui.home:id/icon_icon" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[473,2110][607,2216]" displayed="true" /&gt;
+                        &lt;/android.widget.FrameLayout&gt;
+                      &lt;/android.widget.FrameLayout&gt;
+                      &lt;android.widget.FrameLayout index="1" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_title_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[413,2244][667,2340]" displayed="true"&gt;
+                        &lt;android.widget.TextView index="0" package="com.miui.home" class="android.widget.TextView" text="Pure Tuber" resource-id="com.miui.home:id/icon_title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[413,2249][667,2340]" displayed="true" /&gt;
+                      &lt;/android.widget.FrameLayout&gt;
+                    &lt;/android.widget.RelativeLayout&gt;
+                    &lt;android.widget.RelativeLayout index="3" package="com.miui.home" class="android.widget.RelativeLayout" text="" content-desc="Pasta" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[624,2094][878,2216]" displayed="true"&gt;
+                      &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[673,2094][829,2216]" displayed="true"&gt;
+                        &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[673,2094][829,2216]" displayed="true"&gt;
+                          &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" content-desc="Pasta" resource-id="com.miui.home:id/icon_icon" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[684,2110][818,2216]" displayed="true" /&gt;
+                          &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/cover" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[684,2110][818,2216]" displayed="true" /&gt;
+                          &lt;android.widget.LinearLayout index="2" package="com.miui.home" class="android.widget.LinearLayout" text="" resource-id="com.miui.home:id/preview_icons_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[701,2127][800,2216]" displayed="true"&gt;
+                            &lt;android.widget.LinearLayout index="0" package="com.miui.home" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[701,2127][800,2160]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item1" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[701,2127][734,2160]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item2" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[734,2127][767,2160]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="2" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item3" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[767,2127][800,2160]" displayed="true" /&gt;
+                            &lt;/android.widget.LinearLayout&gt;
+                            &lt;android.widget.LinearLayout index="1" package="com.miui.home" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[701,2160][800,2193]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item4" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[701,2160][734,2193]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item5" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[734,2160][767,2193]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="2" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item6" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[767,2160][800,2193]" displayed="true" /&gt;
+                            &lt;/android.widget.LinearLayout&gt;
+                            &lt;android.widget.LinearLayout index="2" package="com.miui.home" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[701,2193][800,2216]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item7" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[701,2193][734,2216]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item8" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[734,2193][767,2216]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="2" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item9" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[767,2193][800,2216]" displayed="true" /&gt;
+                            &lt;/android.widget.LinearLayout&gt;
+                          &lt;/android.widget.LinearLayout&gt;
+                        &lt;/android.widget.FrameLayout&gt;
+                      &lt;/android.widget.FrameLayout&gt;
+                      &lt;android.widget.FrameLayout index="1" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_title_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[624,2244][878,2340]" displayed="true"&gt;
+                        &lt;android.widget.TextView index="0" package="com.miui.home" class="android.widget.TextView" text="Pasta" resource-id="com.miui.home:id/icon_title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[624,2249][878,2340]" displayed="true" /&gt;
+                      &lt;/android.widget.FrameLayout&gt;
+                    &lt;/android.widget.RelativeLayout&gt;
+                    &lt;android.widget.RelativeLayout index="4" package="com.miui.home" class="android.widget.RelativeLayout" text="" content-desc="Trívia" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[835,2094][1080,2216]" displayed="true"&gt;
+                      &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[884,2094][1040,2216]" displayed="true"&gt;
+                        &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[884,2094][1040,2216]" displayed="true"&gt;
+                          &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" content-desc="Trívia" resource-id="com.miui.home:id/icon_icon" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[895,2110][1029,2216]" displayed="true" /&gt;
+                          &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/cover" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[895,2110][1029,2216]" displayed="true" /&gt;
+                          &lt;android.widget.LinearLayout index="2" package="com.miui.home" class="android.widget.LinearLayout" text="" resource-id="com.miui.home:id/preview_icons_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[912,2127][1011,2216]" displayed="true"&gt;
+                            &lt;android.widget.LinearLayout index="0" package="com.miui.home" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[912,2127][1011,2160]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item1" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[912,2127][945,2160]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item2" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[945,2127][978,2160]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="2" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item3" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[978,2127][1011,2160]" displayed="true" /&gt;
+                            &lt;/android.widget.LinearLayout&gt;
+                            &lt;android.widget.LinearLayout index="1" package="com.miui.home" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[912,2160][1011,2193]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item4" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[912,2160][945,2193]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item5" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[945,2160][978,2193]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="2" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item6" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[978,2160][1011,2193]" displayed="true" /&gt;
+                            &lt;/android.widget.LinearLayout&gt;
+                            &lt;android.widget.LinearLayout index="2" package="com.miui.home" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[912,2193][1011,2216]" displayed="true"&gt;
+                              &lt;android.widget.ImageView index="0" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item7" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[912,2193][945,2216]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="1" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item8" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[945,2193][978,2216]" displayed="true" /&gt;
+                              &lt;android.widget.ImageView index="2" package="com.miui.home" class="android.widget.ImageView" text="" resource-id="com.miui.home:id/item9" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[978,2193][1011,2216]" displayed="true" /&gt;
+                            &lt;/android.widget.LinearLayout&gt;
+                          &lt;/android.widget.LinearLayout&gt;
+                        &lt;/android.widget.FrameLayout&gt;
+                      &lt;/android.widget.FrameLayout&gt;
+                      &lt;android.widget.FrameLayout index="1" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/icon_title_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[835,2244][1080,2340]" displayed="true"&gt;
+                        &lt;android.widget.TextView index="0" package="com.miui.home" class="android.widget.TextView" text="Trívia" resource-id="com.miui.home:id/icon_title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[835,2249][1080,2340]" displayed="true" /&gt;
+                      &lt;/android.widget.FrameLayout&gt;
+                    &lt;/android.widget.RelativeLayout&gt;
+                  &lt;/com.miui.home.launcher.ScreenView&gt;
+                &lt;/android.widget.FrameLayout&gt;
+                &lt;android.widget.FrameLayout index="3" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2216]" displayed="true" /&gt;
+              &lt;/android.widget.FrameLayout&gt;
+              &lt;android.widget.FrameLayout index="2" package="com.miui.home" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1,2216]" displayed="true"&gt;
+                &lt;android.widget.FrameLayout index="0" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/default_position" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="true" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,80][1,2216]" displayed="true" /&gt;
+              &lt;/android.widget.FrameLayout&gt;
+              &lt;android.widget.FrameLayout index="3" package="com.miui.home" class="android.widget.FrameLayout" text="" resource-id="com.miui.home:id/drop_target_bar" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,667]" displayed="true" /&gt;
+            &lt;/android.widget.FrameLayout&gt;
+          &lt;/android.widget.FrameLayout&gt;
+        &lt;/android.widget.FrameLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20230620 14:43:29.325" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" starttime="20230620 14:43:29.324" endtime="20230620 14:43:29.329"/>
+</kw>
+<msg timestamp="20230620 14:43:29.334" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20230620 14:43:29.343" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms</msg>
+<msg timestamp="20230620 14:43:29.344" level="FAIL">Element 'id=com.pharmacysa.farmaciasapp.debug:id/editTerms' did not appear in 15 seconds</msg>
+<status status="FAIL" starttime="20230620 14:43:12.701" endtime="20230620 14:43:29.346"/>
+</kw>
+<status status="FAIL" starttime="20230620 14:43:12.700" endtime="20230620 14:43:29.347"/>
+</kw>
+<kw name="Quando clica na barra de Busca" library="Recursos">
+<status status="NOT RUN" starttime="20230620 14:43:29.348" endtime="20230620 14:43:29.348"/>
+</kw>
+<kw name="E o usuário digita o nome do produto" library="Recursos">
+<status status="NOT RUN" starttime="20230620 14:43:29.349" endtime="20230620 14:43:29.350"/>
+</kw>
+<kw name="E uma lista de opções de auto completar deve ser exibida" library="Recursos">
+<status status="NOT RUN" starttime="20230620 14:43:29.351" endtime="20230620 14:43:29.351"/>
+</kw>
+<kw name="E o usuário seleciona o produto desejado" library="Recursos">
+<status status="NOT RUN" starttime="20230620 14:43:29.353" endtime="20230620 14:43:29.353"/>
+</kw>
+<kw name="Então a busca será finalizada." library="Recursos">
+<status status="NOT RUN" starttime="20230620 14:43:29.354" endtime="20230620 14:43:29.355"/>
+</kw>
+<status status="FAIL" starttime="20230620 14:42:26.766" endtime="20230620 14:43:29.356">Element 'id=com.pharmacysa.farmaciasapp.debug:id/editTerms' did not appear in 15 seconds</status>
+</test>
+<status status="FAIL" starttime="20230620 14:42:25.396" endtime="20230620 14:43:29.362"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Busca">Busca</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230620 14:42:26.747" level="ERROR">Error in file 'c:\Users\Time L\Documents\Automação\Recursos.robot' on line 6: Invalid resource file extension '.feature'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20230620 14:43:29.334" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+</errors>
+</robot>

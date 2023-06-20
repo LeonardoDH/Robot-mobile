@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230619 09:56:12.966" rpa="false" schemaversion="3">
+<suite id="s1" name="Busca" source="C:\Users\Time L\Documents\Automação\busca.robot">
+<test id="s1-t1" name="Busca De itens e lojas" line="6">
+<kw name="Abrir App" library="Recursos">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName:UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=redmi note 8</arg>
+<arg>app=${EXECDIR}/APP/app.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230619 09:56:13.829" endtime="20230619 09:56:47.492"/>
+</kw>
+<status status="PASS" starttime="20230619 09:56:13.826" endtime="20230619 09:56:47.492"/>
+</kw>
+<kw name="Dado que o usuário esteja na tela de login" library="Recursos">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/btNext</arg>
+<arg>15</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230619 09:56:54.376" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/btNext</msg>
+<status status="PASS" starttime="20230619 09:56:47.495" endtime="20230619 09:56:54.376"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/btNext</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230619 09:56:54.382" level="INFO">Clicking element 'id=com.pharmacysa.farmaciasapp.debug:id/btNext'.</msg>
+<msg timestamp="20230619 09:56:54.609" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/btNext</msg>
+<status status="PASS" starttime="20230619 09:56:54.376" endtime="20230619 09:56:54.609"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/btNext</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230619 09:56:54.613" level="INFO">Clicking element 'id=com.pharmacysa.farmaciasapp.debug:id/btNext'.</msg>
+<msg timestamp="20230619 09:56:55.489" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/btNext</msg>
+<status status="PASS" starttime="20230619 09:56:54.609" endtime="20230619 09:56:55.489"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/btInit</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230619 09:56:55.499" level="INFO">Clicking element 'id=com.pharmacysa.farmaciasapp.debug:id/btInit'.</msg>
+<msg timestamp="20230619 09:56:56.324" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/btInit</msg>
+<status status="PASS" starttime="20230619 09:56:55.490" endtime="20230619 09:56:56.324"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/customEditText</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230619 09:56:57.423" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/customEditText</msg>
+<status status="PASS" starttime="20230619 09:56:56.324" endtime="20230619 09:56:57.423"/>
+</kw>
+<status status="PASS" starttime="20230619 09:56:47.494" endtime="20230619 09:56:57.423"/>
+</kw>
+<kw name="E adicione um email válido" library="Recursos">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/customEditText</arg>
+<arg>${email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230619 09:56:57.429" level="INFO">Typing text 'test-user-e2e@farmaciasapp.com.br' into text field 'id=com.pharmacysa.farmaciasapp.debug:id/customEditText'</msg>
+<msg timestamp="20230619 09:56:57.736" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/customEditText</msg>
+<status status="PASS" starttime="20230619 09:56:57.425" endtime="20230619 09:56:57.736"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/customEditText</arg>
+<arg>15</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230619 09:56:58.444" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/customEditText</msg>
+<status status="PASS" starttime="20230619 09:56:57.736" endtime="20230619 09:56:58.444"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/buttonRequestOTP</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230619 09:56:58.450" level="INFO">Clicking element 'id=com.pharmacysa.farmaciasapp.debug:id/buttonRequestOTP'.</msg>
+<msg timestamp="20230619 09:56:58.627" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/buttonRequestOTP</msg>
+<status status="PASS" starttime="20230619 09:56:58.445" endtime="20230619 09:56:58.628"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230619 09:57:02.027" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview
+criteria is com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview
+criteria is com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview
+criteria is com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview
+criteria is com.pharmacysa.farmaciasapp.debug:id/labelOTPSentOverview</msg>
+<status status="PASS" starttime="20230619 09:56:58.628" endtime="20230619 09:57:02.027"/>
+</kw>
+<status status="PASS" starttime="20230619 09:56:57.424" endtime="20230619 09:57:02.027"/>
+</kw>
+<kw name="E receba o otp válido" library="Recursos">
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/customEditText</arg>
+<arg>${OTP}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230619 09:57:02.033" level="INFO">Typing text '202322' into text field 'id=com.pharmacysa.farmaciasapp.debug:id/customEditText'</msg>
+<msg timestamp="20230619 09:57:02.173" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/customEditText</msg>
+<status status="PASS" starttime="20230619 09:57:02.029" endtime="20230619 09:57:02.173"/>
+</kw>
+<status status="PASS" starttime="20230619 09:57:02.028" endtime="20230619 09:57:02.173"/>
+</kw>
+<kw name="Quando o usuário clicar em entrar" library="Recursos">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.pharmacysa.farmaciasapp.debug:id/buttonConfirmOTP</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230619 09:57:02.178" level="INFO">Clicking element 'id=com.pharmacysa.farmaciasapp.debug:id/buttonConfirmOTP'.</msg>
+<msg timestamp="20230619 09:57:02.962" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/buttonConfirmOTP</msg>
+<status status="PASS" starttime="20230619 09:57:02.175" endtime="20230619 09:57:02.962"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView</arg>
+<arg>20</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230619 09:57:11.618" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView
+xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.ImageView</msg>
+<status status="PASS" starttime="20230619 09:57:02.962" endtime="20230619 09:57:11.619"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230619 09:57:11.627" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[2]'.</msg>
+<msg timestamp="20230619 09:57:12.547" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView[2]</msg>
+<status status="PASS" starttime="20230619 09:57:11.619" endtime="20230619 09:57:12.547"/>
+</kw>
+<status status="PASS" starttime="20230619 09:57:02.174" endtime="20230619 09:57:12.547"/>
+</kw>
+<kw name="Então o usuário é redirecionado para a página inicial da conta" library="Recursos">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.android.permissioncontroller:id/permission_allow_foreground_only_button</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230619 09:57:14.062" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_foreground_only_button
+criteria is com.android.permissioncontroller:id/permission_allow_foreground_only_button</msg>
+<status status="PASS" starttime="20230619 09:57:12.548" endtime="20230619 09:57:14.062"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.permissioncontroller:id/permission_allow_foreground_only_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230619 09:57:14.066" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/permission_allow_foreground_only_button'.</msg>
+<msg timestamp="20230619 09:57:14.154" level="INFO">criteria is com.android.permissioncontroller:id/permission_allow_foreground_only_button</msg>
+<status status="PASS" starttime="20230619 09:57:14.062" endtime="20230619 09:57:14.154"/>
+</kw>
+<status status="PASS" starttime="20230619 09:57:12.548" endtime="20230619 09:57:14.155"/>
+</kw>
+<kw name="Dado que o usuário está na tela inicial" library="Recursos">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${Barra de busca}</arg>
+<arg>15</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20230619 09:57:15.228" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms
+criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms</msg>
+<status status="PASS" starttime="20230619 09:57:14.156" endtime="20230619 09:57:15.228"/>
+</kw>
+<status status="PASS" starttime="20230619 09:57:14.155" endtime="20230619 09:57:15.229"/>
+</kw>
+<kw name="Quando clica na barra de Busca" library="Recursos">
+<kw name="Tap" library="AppiumLibrary">
+<arg>${Barra de busca}</arg>
+<doc>*DEPRECATED!!* Since selenium v4, use `Tap With Positions` keyword.</doc>
+<msg timestamp="20230619 09:57:15.230" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20230619 09:57:17.744" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" starttime="20230619 09:57:17.744" endtime="20230619 09:57:17.744"/>
+</kw>
+<msg timestamp="20230619 09:57:17.747" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20230619 09:57:17.749" level="INFO">criteria is com.pharmacysa.farmaciasapp.debug:id/editTerms</msg>
+<msg timestamp="20230619 09:57:17.749" level="FAIL">StaleElementReferenceException: Message: Cached elements 'By.id: com.pharmacysa.farmaciasapp.debug:id/editTerms' do not exist in DOM anymore
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.StaleElementReferenceException: Cached elements 'By.id: com.pharmacysa.farmaciasapp.debug:id/editTerms' do not exist in DOM anymore
+	at io.appium.uiautomator2.model.ElementsCache.restore(ElementsCache.java:78)
+	at io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:153)
+	at io.appium.uiautomator2.handler.Location.safeHandle(Location.java:23)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:923)
+</msg>
+<status status="FAIL" starttime="20230619 09:57:15.230" endtime="20230619 09:57:17.885"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${Busca}</arg>
+<arg>15</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" starttime="20230619 09:57:17.886" endtime="20230619 09:57:17.886"/>
+</kw>
+<status status="FAIL" starttime="20230619 09:57:15.229" endtime="20230619 09:57:17.886"/>
+</kw>
+<kw name="E o usuário digita o nome do produto" library="Recursos">
+<status status="NOT RUN" starttime="20230619 09:57:17.887" endtime="20230619 09:57:17.887"/>
+</kw>
+<kw name="E uma lista de opções de auto completar deve ser exibida" library="Recursos">
+<status status="NOT RUN" starttime="20230619 09:57:17.888" endtime="20230619 09:57:17.888"/>
+</kw>
+<kw name="E o usuário seleciona o produto desejado" library="Recursos">
+<status status="NOT RUN" starttime="20230619 09:57:17.888" endtime="20230619 09:57:17.888"/>
+</kw>
+<kw name="Então a busca será finalizada." library="Recursos">
+<status status="NOT RUN" starttime="20230619 09:57:17.889" endtime="20230619 09:57:17.889"/>
+</kw>
+<kw name="Quando o usuário seleciona uma loja" library="Recursos">
+<status status="NOT RUN" starttime="20230619 09:57:17.889" endtime="20230619 09:57:17.889"/>
+</kw>
+<kw name="E visualiza os produtos da loja" library="Recursos">
+<status status="NOT RUN" starttime="20230619 09:57:17.889" endtime="20230619 09:57:17.889"/>
+</kw>
+<kw name="E Seleciona um produto" library="Recursos">
+<status status="NOT RUN" starttime="20230619 09:57:17.890" endtime="20230619 09:57:17.890"/>
+</kw>
+<kw name="E Clicamos em &quot;comprar agora&quot;" library="Recursos">
+<status status="NOT RUN" starttime="20230619 09:57:17.890" endtime="20230619 09:57:17.890"/>
+</kw>
+<kw name="Então somos direcionados para a tela de cesta" library="Recursos">
+<status status="NOT RUN" starttime="20230619 09:57:17.891" endtime="20230619 09:57:17.891"/>
+</kw>
+<status status="FAIL" starttime="20230619 09:56:13.810" endtime="20230619 09:57:17.892">StaleElementReferenceException: Message: Cached elements 'By.id: com.pharmacysa.farmaciasapp.debug:id/editTerms' do not exist in DOM anymore
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.StaleElementReferenceException: Cached elements 'By.id: com.pharmacysa.farmaciasapp.debug:id/editTerms' do not exist in DOM anymore
+	at io.appium.uiautomator2.model.ElementsCache.restore(ElementsCache.java:78)
+	at io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:153)
+	at io.appium.uiautomator2.handler.Location.safeHandle(Location.java:23)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:266)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:260)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:68)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(Abstra...
+    [ Message content over the limit has been removed. ]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:923)</status>
+</test>
+<status status="FAIL" starttime="20230619 09:56:12.968" endtime="20230619 09:57:17.905"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Busca">Busca</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230619 09:56:13.799" level="ERROR">Error in file 'C:\Users\Time L\Documents\Automação\Recursos.robot' on line 6: Invalid resource file extension '.feature'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+<msg timestamp="20230619 09:57:15.230" level="WARN">Keyword 'AppiumLibrary.Tap' is deprecated. Since selenium v4, use `Tap With Positions` keyword.</msg>
+<msg timestamp="20230619 09:57:17.747" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+</errors>
+</robot>
