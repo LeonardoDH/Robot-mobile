@@ -1,0 +1,38 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+- job: RunMobileTests
+  displayName: 'Run Mobile Tests'
+  steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.x'
+      addToPath: true
+    displayName: 'Use Python 3.x'
+
+  - script: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+      npm install -g appium
+    displayName: 'Install dependencies'
+
+  - script: |
+      # Configurar emuladores Android ou dispositivos físicos (iniciar emuladores, conectar dispositivos, etc.)
+      # Iniciar o servidor Appium
+      appium &
+      sleep 10  # Aguarde o servidor Appium iniciar completamente
+    displayName: 'Configure Emulators/Devices and Start Appium'
+
+  - script: |
+      # Executar testes automatizados móveis usando Robot Framework e Appium
+      robot robot-mobile-tests/testes/
+    displayName: 'Run Mobile Tests'
+
+  - script: |
+      # Encerrar o servidor Appium após os testes
+      pkill -f appium
+    displayName: 'Stop Appium server'
